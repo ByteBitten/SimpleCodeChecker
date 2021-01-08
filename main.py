@@ -181,12 +181,12 @@ imgtoptext
 vcmd = root.register(func=num_limit)
 
 # 3-6 single-digit input fields
-entry1 = Entry(root, validate='key', validatecommand=(vcmd, '%P', 1), font=(config['EntryFields']['FontType'], config['EntryFields']['FontSize']), fg=config['EntryFields']['FontColor'], bg=config['EntryFields']['BGColor'], width=2, bd=0, justify='center')
-entry2 = Entry(root, validate='key', validatecommand=(vcmd, '%P', 2), font=(config['EntryFields']['FontType'], config['EntryFields']['FontSize']), fg=config['EntryFields']['FontColor'], bg=config['EntryFields']['BGColor'], width=2, bd=0, justify='center')
-entry3 = Entry(root, validate='key', validatecommand=(vcmd, '%P', 3), font=(config['EntryFields']['FontType'], config['EntryFields']['FontSize']), fg=config['EntryFields']['FontColor'], bg=config['EntryFields']['BGColor'], width=2, bd=0, justify='center')
-entry4 = Entry(root, validate='key', validatecommand=(vcmd, '%P', 4), font=(config['EntryFields']['FontType'], config['EntryFields']['FontSize']), fg=config['EntryFields']['FontColor'], bg=config['EntryFields']['BGColor'], width=2, bd=0, justify='center')
-entry5 = Entry(root, validate='key', validatecommand=(vcmd, '%P', 5), font=(config['EntryFields']['FontType'], config['EntryFields']['FontSize']), fg=config['EntryFields']['FontColor'], bg=config['EntryFields']['BGColor'], width=2, bd=0, justify='center')
-entry6 = Entry(root, validate='key', validatecommand=(vcmd, '%P', 6), font=(config['EntryFields']['FontType'], config['EntryFields']['FontSize']), fg=config['EntryFields']['FontColor'], bg=config['EntryFields']['BGColor'], width=2, bd=0, justify='center')
+entry1 = Entry(root, validate='key', validatecommand=(vcmd, '%P', 1), font=(config['EntryFields']['FontType'], config['EntryFields']['FontSize']), fg=config['EntryFields']['FontColor'], bg=config['EntryFields']['BGColor'], width=config['EntryFields']['Width'], bd=0, justify='center')
+entry2 = Entry(root, validate='key', validatecommand=(vcmd, '%P', 2), font=(config['EntryFields']['FontType'], config['EntryFields']['FontSize']), fg=config['EntryFields']['FontColor'], bg=config['EntryFields']['BGColor'], width=config['EntryFields']['Width'], bd=0, justify='center')
+entry3 = Entry(root, validate='key', validatecommand=(vcmd, '%P', 3), font=(config['EntryFields']['FontType'], config['EntryFields']['FontSize']), fg=config['EntryFields']['FontColor'], bg=config['EntryFields']['BGColor'], width=config['EntryFields']['Width'], bd=0, justify='center')
+entry4 = Entry(root, validate='key', validatecommand=(vcmd, '%P', 4), font=(config['EntryFields']['FontType'], config['EntryFields']['FontSize']), fg=config['EntryFields']['FontColor'], bg=config['EntryFields']['BGColor'], width=config['EntryFields']['Width'], bd=0, justify='center')
+entry5 = Entry(root, validate='key', validatecommand=(vcmd, '%P', 5), font=(config['EntryFields']['FontType'], config['EntryFields']['FontSize']), fg=config['EntryFields']['FontColor'], bg=config['EntryFields']['BGColor'], width=config['EntryFields']['Width'], bd=0, justify='center')
+entry6 = Entry(root, validate='key', validatecommand=(vcmd, '%P', 6), font=(config['EntryFields']['FontType'], config['EntryFields']['FontSize']), fg=config['EntryFields']['FontColor'], bg=config['EntryFields']['BGColor'], width=config['EntryFields']['Width'], bd=0, justify='center')
 
 # Entry position adjust
 field1 = -200
